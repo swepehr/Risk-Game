@@ -1,7 +1,4 @@
-/*
- * This class is used to implement the data and logic of how to execute orders given by a player.
- * 
- */
+package Models;
 
 import java.util.List;
 
@@ -26,23 +23,20 @@ public class Orders {
     public void setCountryID(int newCountry) {
         this.d_countryID = newCountry;
     }
-
     /**
-     * constructor for the Orders class.
+     * This is a fully parametrized constructor for the Models.Orders class.
      * 
-     * @param numOfArmies Number of Armies to deploy.
-     * @param countryID   ID of the country on which to deploy the specified number
-     *                    of armies.
+     * @param numOfArmies Number of Armies to deploy in this order.
+     * @param countryID ID of the country on which to deploy the specified number of armies.
      */
-    public Orders(int numOfArmies, int countryID) {
+    public Orders(int numOfArmies, int countryID){
         this.d_countryID = countryID;
         this.d_numOfArmies = numOfArmies;
     }
 
-    /**
-     * Execution of the logic of deploying the armies to the specified Country.
+    /** 
+     * Execution of the logic of deploying the armies to the specified Models.Country.
      */
-
     public void execute(Player p_player, WarMap p_WarMap){
         // Assigning dummy values for testing the login
         p_player.set_playerName("Asliddin");
@@ -53,5 +47,4 @@ public class Orders {
         List<String> Player_playerOrder = p_player.set_playerOrder();
 
     }
-
 }
