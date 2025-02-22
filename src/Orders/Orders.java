@@ -3,8 +3,6 @@
  * 
  */
 
-import java.util.List;
-
 public class Orders {
 
     private int d_numOfArmies;
@@ -43,14 +41,7 @@ public class Orders {
      * Execution of the logic of deploying the armies to the specified Country.
      */
 
-    public void execute(Player p_player, WarMap p_WarMap){
-        // Assigning dummy values for testing the login
-        p_player.set_playerName("Asliddin");
-        p_player.set_playerCountries("India", "Iran", "China");
-        p_player.set_armiesNumber(4,7,3);
-
-        //playerOrder is a list with (SourceCountry, DestinationCountry, NoOfArmies)
-        List<String> Player_playerOrder = p_player.set_playerOrder();
+    public void execute(WarMap p_warMap) {
 
     }
 
